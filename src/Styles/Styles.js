@@ -12,7 +12,7 @@ export const doctorsStyles = {
     "flex flex-col md:flex-row justify-center items-center gap-3 my-4",
   form: "flex justify-center",
   input: "text-black px-3 outline-none placeholder:text-black w-64",
-  btn: "bg-white text-black px-3 text-lg border-l border-black font-bold",
+  btn: "bg-white text-black px-3 text-lg border-l border-black font-bold relative",
   filterMain:
     "absolute text-white bg-gray-600 top-full right-0 left-0 font-medium text-md",
   filterItem: "hover:bg-gray-700 px-2",

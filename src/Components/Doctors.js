@@ -87,7 +87,7 @@ const Doctors = () => {
       </div>
       <div className={doctorsStyles.doctorsMain}>
         {show.map((doctor) => (
-          <div key={Math.random()} className={doctorsStyles.doctor}>
+          <div key={doctor.number} className={doctorsStyles.doctor}>
             <img
               className={doctorsStyles.img}
               src={`https://avatars.dicebear.com/api/human/${doctor.name}.svg`}
@@ -96,7 +96,7 @@ const Doctors = () => {
             <h5>Name: {doctor.name}</h5>
             <h5>Speciality: {doctor.speciality}</h5>
             <p>Age: {doctor.age}</p>
-            <p>Phone: +1{Math.floor(Math.random() * 10000000000)}</p>
+            <p>Phone: {doctor.number}</p>
           </div>
         ))}
       </div>
